@@ -28,4 +28,4 @@ From inside the Qt Creator IDE, open the calwidget.pro to load all the C++ sourc
 ## Future Updates
 Currently, window size is static, so a future update will likely allow for resizing the window.
 
-When an activity is created, it displays some of its data, such as Interval of Repeat or the Time unformatted as it was entered into the program. Clicking back and forth between another activity will change the Interval of Repeat back to seconds and the Time to be formatted. A future update will likely fully format the activity parameters before displaying.
+When an activity is created, it displays some of its data, such as Interval of Repeat or the Time unformatted, just as it was entered into the program. Clicking back and forth between another activity will change the Interval of Repeat back to seconds and the Time to be formatted. A future update will likely fully format the activity parameters before displaying.
