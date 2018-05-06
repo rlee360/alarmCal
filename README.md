@@ -4,7 +4,7 @@ An inclusive alarm/calendar system for Linux systems.
 ## Installation Instructions
 The main dependency needed for alarmCal is `aplay`. To install it on Debian-based systems (e.g. Ubuntu), use `sudo apt install aplay`.
 
-The main program is calwidget, located in the alarmCal directory. To download this folder, either clone the github repo, or use the Download button on Github to download the repo. The alarmCal directory contains some files necessary for alarmCal to function properly, so it should be put in a place where the folder will not be disturbed. From there, run the install.sh script by typing `./install.sh`. This will make the calwidget application executable, and create a Desktop application shortcut. From there, double clicking on the calwidget icon or typing `./calwidget` in a terminal will open the program. An application shortcut will be made in the current user's Desktop directory, if such a directory exists.
+The main program is calwidget, located in the alarmCal directory. To download this folder, either clone the github repo, or use the Download button on Github to download the repo. The alarmCal directory contains some files necessary for alarmCal to function properly, so it should be put in a place where the folder will not be disturbed. From there, run the install.sh script by typing `./install.sh`. This will make the calwidget application executable. From there, double clicking on the calwidget icon or typing `./calwidget` in a terminal will open the program.
 
 If there are any issues with the program, then some Qt dependencies may be necessary. Installing qtcreator will generally include all the necessary dependencies. For Debian-based systems (e.g. Ubuntu), it is `sudo apt install qtcreator`.
 
