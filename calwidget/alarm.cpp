@@ -20,7 +20,9 @@
 #endif //defined
 
 #define PRINTER qDebug()
+
 #define MARGIN_OF_ERROR 15
+
 
 using namespace std;
 

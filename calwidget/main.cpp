@@ -109,29 +109,23 @@ void eventCheck() {
         }
     }
 
-    int eventOffFlag = 0;
     while(1) { //check forever, or at least until all events are DONE
         for(auto it=eventSet.begin(); it!=eventSet.end(); ++it) {
-            if(((*it)->checkEvent()) > 0) {
-                eventCount--;
-                eventOffFlag = 1;
-            }
-
             //checkRing returns 1
-            if(((*it)->ringNotification()) > 0 && eventOffFlag == 1) {
+            if(((*it)->ringNotification()) > 0) {
                 eventAlarmCount--;
-                eventOffFlag = 0;
             }
             else {}
 
 
-
+            if(((*it)->checkEvent()) > 0) {
+                eventCount--;
+            }
 
         }
         if(programEnd > 0) {
             break;
         }
-
         this_thread::sleep_for(std::chrono::seconds(2));  //sleep(2);
     }
     ofstream outFile(eventFilename, ofstream::out);
