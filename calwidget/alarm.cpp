@@ -153,7 +153,6 @@ int Alarm::checkRing() {
     //instantiate a temp object with now time
     Datetime temp("now");
     long diff = ringTime - temp; //find the difference between the times.
-
     if(abs(diff) < MARGIN_OF_ERROR && doneFlag == 0) { //if the time is within range and the alarm hasn't been done, then ring it and return the result
         return ring(); //return the ring result. 0 if more alarms to come. 1 and done :)
     }
