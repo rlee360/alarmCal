@@ -2,7 +2,7 @@
 An inclusive alarm/calendar system for Linux systems.
 
 ## Installation Instructions
-The main dependency needed for alarmCal is `aplay`. To install it on Debian-based systems (e.g. Ubuntu), use `sudo apt install aplay`.
+The main dependency needed for alarmCal is `aplay`. To install it on Debian-based systems (e.g. Ubuntu), use `sudo apt install alsa-utils`.
 
 The main program is calwidget, located in the alarmCal directory. To download this folder, either clone the github repo, or use the Download button on Github to download the repo. The alarmCal directory contains some files necessary for alarmCal to function properly, so it should be put in a place where the folder will not be disturbed. From there, run the install.sh script by typing `./install.sh`. This will make the calwidget application executable. ~~From there, double clicking on the calwidget icon or typing `./calwidget` in a terminal will open the program.~~ Newly added: an alarmCal desktop shortcut will be made that will make accessing the application simpler. Just double click on the desktop shortcut to get started.
 
